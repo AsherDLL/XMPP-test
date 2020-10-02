@@ -65,7 +65,8 @@ jobs:
 
     - run: |
        sudo apt-get install automake 
-       $PWD/gloox-1.0.24/configure
+       # $PWD/gloox-1.0.24/configure
+       autoreconf -vfi
        make
        make install
 
