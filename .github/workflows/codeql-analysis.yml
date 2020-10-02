@@ -64,8 +64,6 @@ jobs:
     #    uses a compiled language
 
     - run: |
-        ls
-       ./gloox-1.0.24/autogen.sh
        ./configure
        make
        make install
