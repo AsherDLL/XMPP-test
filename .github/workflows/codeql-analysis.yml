@@ -65,6 +65,7 @@ jobs:
 
     - run: |
        sudo apt-get install autotools-dev
+       sudo apt-get install texinfo
        sudo apt install libtool-bin automake makeinfo
        autoreconf -f -i
        $PWD/gloox-1.0.24/configure
