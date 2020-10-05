@@ -65,6 +65,8 @@ jobs:
 
     - run: |
        sudo apt-get install autotools-dev
+       sudo apt install libtool-bin automake makeinfo
+       autoreconf -f -i
        $PWD/gloox-1.0.24/configure
        make
        make install
