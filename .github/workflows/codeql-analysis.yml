@@ -67,7 +67,6 @@ jobs:
        sudo apt-get install gperf bison flex texinfo
        sudo apt-get install autotools-dev
        sudo apt install libtool-bin automake
-       autoreconf -f -i
        $PWD/gloox-1.0.24/configure
        make
        make install
