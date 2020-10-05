@@ -64,7 +64,7 @@ jobs:
     #    uses a compiled language
 
     - run: |
-       sudo apt-get install texinfo
+       sudo apt-get install gperf bison flex texinfo
        sudo apt-get install autotools-dev
        sudo apt install libtool-bin automake makeinfo
        autoreconf -f -i
