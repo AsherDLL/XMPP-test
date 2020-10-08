@@ -64,6 +64,7 @@ jobs:
     #    uses a compiled language
 
     - run: |
+       sudo apt-get install m4
        sudo apt-get install bison flex texinfo
        sudo apt-get install autotools-dev
        sudo apt install libtool-bin automake
