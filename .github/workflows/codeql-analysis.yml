@@ -76,8 +76,9 @@ jobs:
        sudo apt-get install automake build-essential libtool
        sudo apt-get install -yqq gcc g++
        sudo apt-get install -yqq libidn11-dev libssl-dev zlib1g-dev libpthread-stubs0-dev
-       cd $PWD/gloox-1.0.24/ && autoreconf
-       $PWD/gloox-1.0.24/configure
+       cd $PWD/gloox-1.0.24/
+       autoreconf
+       configure
        make
        make install
 
