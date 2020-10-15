@@ -76,7 +76,6 @@ jobs:
        sudo apt-get install automake build-essential libtool
        sudo apt-get install -yqq gcc g++
        sudo apt-get install -yqq libidn11-dev libssl-dev zlib1g-dev libpthread-stubs0-dev
-       autoreconf
        $PWD/configure
        make
        make install
